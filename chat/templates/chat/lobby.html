@@ -13,11 +13,11 @@
     <form id="form">
         <input type="text" name="message"/>
     </form>
-
+    {{user_name}}
     <div id="messages"></div>
-
+    
     <script type="text/javascript">
-        let url = `ws://${window.location.host}/ws/socket-server/`
+        let url = `ws://${window.location.host}/ws/{{room_name}}/`
 
         const chatSocket = new WebSocket(url)
 
